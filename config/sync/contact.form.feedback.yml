@@ -1,0 +1,14 @@
+uuid: 676640a3-103f-4337-bda2-2a6e8871e867
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - huntinkapp@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
