@@ -1,0 +1,11 @@
+uuid: c65f2baf-7b76-40a3-ba16-e067d95059eb
+langcode: en
+status: true
+dependencies: {  }
+id: supplies
+label: Supplies
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }
+locked: false

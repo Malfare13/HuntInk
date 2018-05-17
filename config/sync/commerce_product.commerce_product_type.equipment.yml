@@ -1,0 +1,11 @@
+uuid: 17b06267-0cfd-4a7a-8fc4-f8d1a850d01f
+langcode: en
+status: true
+dependencies: {  }
+id: equipment
+label: Equipment
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }
+locked: false
