@@ -1,0 +1,9 @@
+uuid: 3873f37a-e12f-4f5a-8e18-2fb7b2bc7c3c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Women Clothes'
+vid: women
+description: ''
+hierarchy: 0
+weight: 0

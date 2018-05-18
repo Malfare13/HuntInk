@@ -1,0 +1,9 @@
+uuid: 7a6773c9-7a34-4b6a-81cc-98ca17111982
+langcode: en
+status: true
+dependencies: {  }
+name: 'Men Clothes'
+vid: men
+description: ''
+hierarchy: 0
+weight: 0
