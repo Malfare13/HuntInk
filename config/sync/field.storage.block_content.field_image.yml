@@ -1,23 +1,23 @@
-uuid: b38e83c8-b65e-4164-8fd7-00e38871cb1d
+uuid: e25a4804-bda1-4121-87d8-e1b9cddec0f5
 langcode: en
 status: true
 dependencies:
   module:
-    - commerce_product
+    - block_content
     - file
     - image
-id: commerce_product.field_image
+id: block_content.field_image
 field_name: field_image
-entity_type: commerce_product
+entity_type: block_content
 type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: ''
+    uuid: 8fbcfa5a-ed56-4c94-a689-a2fcaaf1556f
     alt: ''
     title: ''
-    width: null
-    height: null
+    width: 2588
+    height: 1455
   target_type: file
   display_field: false
   display_default: false

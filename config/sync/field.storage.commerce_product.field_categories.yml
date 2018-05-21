@@ -1,19 +1,20 @@
-uuid: 34a46d34-4be9-4a24-a354-5bbd71f21fcd
+uuid: c243f242-cc6a-46a5-911a-661112b3aafa
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
-id: commerce_product.variations
-field_name: variations
+    - taxonomy
+id: commerce_product.field_categories
+field_name: field_categories
 entity_type: commerce_product
 type: entity_reference
 settings:
-  target_type: commerce_product_variation
+  target_type: taxonomy_term
 module: core
-locked: true
-cardinality: -1
-translatable: false
+locked: false
+cardinality: 1
+translatable: true
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

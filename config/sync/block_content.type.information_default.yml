@@ -1,0 +1,8 @@
+uuid: 41774dca-13a5-4070-97b7-8be3964e7c5a
+langcode: en
+status: true
+dependencies: {  }
+id: information_default
+label: 'Information default'
+revision: 0
+description: ''

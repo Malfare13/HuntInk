@@ -1,12 +1,10 @@
-uuid: 36381a1b-a13d-49d5-abc4-9585bd154079
+uuid: 3b39b95e-55ec-485d-9b49-02692cfae21d
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
     - text
-_core:
-  default_config_hash: nhYtx4dRhENXHM78QmiysOM5d1H8OLi_837Ukf5Mpb8
 id: commerce_product.body
 field_name: body
 entity_type: commerce_product
