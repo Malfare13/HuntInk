@@ -1,0 +1,25 @@
+uuid: 80ffa657-deaa-41bc-b1b1-a8c5d662fb8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: featured_products
+label: 'Featured Products'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      types_products: types_products
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

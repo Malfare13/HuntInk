@@ -21,25 +21,36 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  flexslider: 0
+  flexslider_fields: 0
+  flexslider_views: 0
   help: 0
   history: 0
   image: 0
   inline_entity_form: 0
+  layout_discovery: 0
+  libraries: 0
   link: 0
   menu_ui: 0
   node: 0
   options: 0
   page_cache: 0
+  page_manager: 0
+  page_manager_ui: 0
+  panels: 0
+  panels_ipe: 0
   path: 0
   profile: 0
   quickedit: 0

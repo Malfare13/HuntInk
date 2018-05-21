@@ -1,0 +1,12 @@
+uuid: caaf7bfb-4093-4392-8b0d-fe9bf03eb0c1
+langcode: en
+status: true
+dependencies: {  }
+id: about
+label: About
+description: ''
+use_admin_theme: false
+path: /About
+access_logic: and
+access_conditions: {  }
+parameters: {  }

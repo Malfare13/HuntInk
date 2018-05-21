@@ -1,0 +1,48 @@
+uuid: a5a3f4f1-e9b2-4908-9613-ef290fdb451e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.types_products.body
+    - field.field.node.types_products.field_category
+    - node.type.types_products
+  module:
+    - text
+id: node.types_products.default
+targetEntityType: node
+bundle: types_products
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_category:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

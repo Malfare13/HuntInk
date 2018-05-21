@@ -1,0 +1,12 @@
+uuid: b1d92524-5dde-45a0-8c60-ff3e39ca69b4
+langcode: en
+status: true
+dependencies: {  }
+id: susbscribe
+label: Susbscribe
+description: ''
+use_admin_theme: false
+path: /Susbscribe
+access_logic: and
+access_conditions: {  }
+parameters: {  }
