@@ -1,16 +1,16 @@
-uuid: 3db5e151-ed6f-4777-8f76-52a1872ea6b6
+uuid: 5c9f0e89-2506-47c0-8bd2-cf6439d5c284
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.types_products
+    - node.type.products
   module:
     - text
-id: node.types_products.body
+id: node.products.body
 field_name: body
 entity_type: node
-bundle: types_products
+bundle: products
 label: Body
 description: ''
 required: false

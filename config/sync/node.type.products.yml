@@ -1,4 +1,4 @@
-uuid: 654b89be-10c5-4c62-9820-f67b56a83e57
+uuid: cea067ac-5c22-414c-9f3b-03d621e0db75
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 name: Products
-type: types_products
+type: products
 description: ''
 help: ''
 new_revision: true

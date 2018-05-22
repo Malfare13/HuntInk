@@ -1,25 +1,25 @@
-uuid: 80ffa657-deaa-41bc-b1b1-a8c5d662fb8e
+uuid: 1b5dd5a0-d733-4805-9862-ebc6d25c4bb3
 langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - taxonomy
 id: featured_products
 label: 'Featured Products'
 handler: simple
 handler_configuration: {  }
 entity_settings:
-  target_type: node
-  handler: 'default:node'
+  target_type: taxonomy_term
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      types_products: types_products
+      categories: categories
     sort:
       field: _none
     auto_create: false
     auto_create_bundle: ''
 queue_settings:
   min_size: 0
-  max_size: 0
+  max_size: 2
   act_as_queue: false
   reverse_in_admin: false
