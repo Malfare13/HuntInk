@@ -1,0 +1,10 @@
+uuid: d9ea8794-d63c-47a9-9903-9f8c0edd84df
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.tattoers
+label: Tattoers
+targetEntityType: taxonomy_term
+cache: true

@@ -1,15 +1,15 @@
-uuid: dd8244c5-6a3b-4d36-8eaf-eca5c54fbd7a
+uuid: 50a831b2-c602-4c63-b6ef-803ea3e7216b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_category
-    - node.type.types_products
+    - field.storage.node.field_products
+    - node.type.products
     - taxonomy.vocabulary.categories
-id: node.types_products.field_category
-field_name: field_category
+id: node.products.field_products
+field_name: field_products
 entity_type: node
-bundle: types_products
+bundle: products
 label: Category
 description: ''
 required: false

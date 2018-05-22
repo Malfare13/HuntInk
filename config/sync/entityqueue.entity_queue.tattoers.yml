@@ -1,11 +1,11 @@
-uuid: 1b5dd5a0-d733-4805-9862-ebc6d25c4bb3
+uuid: 311c0212-e98e-4b88-b44b-2935c9e802df
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
-id: featured_products
-label: 'Featured Products'
+id: tattoers
+label: Tattoers
 handler: simple
 handler_configuration: {  }
 entity_settings:
@@ -13,13 +13,13 @@ entity_settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      featured_products: featured_products
+      featured_tattoers: featured_tattoers
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: featured_tattoers
 queue_settings:
   min_size: 0
-  max_size: 2
+  max_size: 0
   act_as_queue: false
   reverse_in_admin: false

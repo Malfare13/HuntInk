@@ -1,0 +1,10 @@
+uuid: 87f3d95e-f4db-40f8-9287-a6f329d61149
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.featured
+label: 'Featured Products'
+targetEntityType: taxonomy_term
+cache: true

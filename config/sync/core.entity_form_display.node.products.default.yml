@@ -1,16 +1,16 @@
-uuid: a5a3f4f1-e9b2-4908-9613-ef290fdb451e
+uuid: e692c38e-ecac-45df-99b2-6e7a81685502
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.types_products.body
-    - field.field.node.types_products.field_category
-    - node.type.types_products
+    - field.field.node.products.body
+    - field.field.node.products.field_products
+    - node.type.products
   module:
     - text
-id: node.types_products.default
+id: node.products.default
 targetEntityType: node
-bundle: types_products
+bundle: products
 mode: default
 content:
   body:
@@ -22,7 +22,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_category:
+  field_products:
     weight: 2
     settings:
       match_operator: CONTAINS

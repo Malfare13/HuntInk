@@ -1,23 +1,20 @@
-uuid: be7884fb-aa82-494a-b4ef-90d799873f2f
+uuid: bd6cfeb6-c429-491d-97d5-4a824c703ded
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.products
-    - field.field.commerce_product.products.body
-    - field.field.commerce_product.products.field_categories
-    - field.field.commerce_product.products.field_image
-    - field.field.commerce_product.products.stores
-    - field.field.commerce_product.products.variations
-    - image.style.thumbnail
+    - commerce_product.commerce_product_type.category
+    - field.field.commerce_product.category.body
+    - field.field.commerce_product.category.stores
+    - field.field.commerce_product.category.variations
   module:
     - commerce
-    - image
     - inline_entity_form
+    - path
     - text
-id: commerce_product.products.default
+id: commerce_product.category.default
 targetEntityType: commerce_product
-bundle: products
+bundle: category
 mode: default
 content:
   body:
@@ -29,26 +26,28 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_categories:
-    weight: 3
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
+  created:
+    type: datetime_timestamp
+    weight: 10
     region: content
-  field_image:
-    weight: 5
-    settings:
-      preview_image_style: thumbnail
-      progress_indicator: throbber
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
+  path:
+    type: path
+    weight: 30
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 90
+    region: content
+    third_party_settings: {  }
   stores:
     type: commerce_entity_select
-    weight: 2
+    weight: -10
     settings:
       hide_single_entity: true
       autocomplete_threshold: 7
@@ -58,15 +57,24 @@ content:
     region: content
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   variations:
     type: inline_entity_form_complex
-    weight: 4
+    weight: 10
     settings:
       override_labels: true
       label_singular: variation
@@ -77,8 +85,4 @@ content:
       match_operator: CONTAINS
     third_party_settings: {  }
     region: content
-hidden:
-  created: true
-  path: true
-  status: true
-  uid: true
+hidden: {  }
