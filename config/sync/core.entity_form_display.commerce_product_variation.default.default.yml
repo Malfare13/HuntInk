@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.default
-    - field.field.commerce_product_variation.default.attribute_color
     - field.field.commerce_product_variation.default.attribute_tamano
   module:
     - commerce_price
@@ -15,12 +14,6 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: default
 content:
-  attribute_color:
-    type: options_select
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   attribute_tamano:
     type: options_select
     weight: 2

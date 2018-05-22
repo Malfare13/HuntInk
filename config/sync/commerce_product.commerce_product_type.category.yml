@@ -1,9 +1,9 @@
-uuid: aa925a81-23f4-4886-b93d-a610145ed662
+uuid: 3714de97-bc86-49fa-94d8-e3d204ffff57
 langcode: en
 status: true
 dependencies: {  }
-id: products
-label: 'Products  Type'
+id: category
+label: 'Category Types'
 description: ''
 variationType: default
 injectVariationFields: true
