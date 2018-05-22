@@ -22,11 +22,14 @@
         "drupal/commerce": "^2.6",
         "drupal/commerce_paypal": "^1.0@beta",
         "drupal/console": "^1.0.2",
+        "drupal/contribute": "^5.0@beta",
         "drupal/core": "~8.5.3",
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/flexslider": "^2.0@beta",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.3",
+        "drupal/webform": "^5.0@RC",
+        "drupal/webforms": "0.x-dev",
         "drush/drush": "^9.0.0",
         "paypal/rest-api-sdk-php": "*",
         "vlucas/phpdotenv": "^2.4",
@@ -73,6 +76,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+      "patches": {
+        "drupal/page_manager": {
+          "https://www.drupal.org/project/page_manager/issues/2874851": "https://www.drupal.org/files/issues/page_manager-2874851-8.patch"
         }
+      }
     }
 }
