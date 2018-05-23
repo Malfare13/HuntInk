@@ -1,0 +1,11 @@
+uuid: 0bc05ef4-29c5-4806-a3ee-a9fedc691771
+langcode: en
+status: true
+dependencies: {  }
+id: clothes
+label: Clothes
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }
+locked: false
