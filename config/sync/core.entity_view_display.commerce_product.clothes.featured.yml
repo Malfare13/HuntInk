@@ -1,0 +1,66 @@
+uuid: 3a1481a0-1826-4f6d-9eae-be2cf27d3521
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.clothes
+    - core.entity_view_mode.commerce_product.featured
+    - field.field.commerce_product.clothes.body
+    - field.field.commerce_product.clothes.field_clothes_type
+    - field.field.commerce_product.clothes.field_image
+    - field.field.commerce_product.clothes.stores
+    - field.field.commerce_product.clothes.variations
+    - image.style.thumbnail
+  module:
+    - commerce_product
+    - image
+    - text
+id: commerce_product.clothes.featured
+targetEntityType: commerce_product
+bundle: clothes
+mode: featured
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_clothes_type:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 2
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

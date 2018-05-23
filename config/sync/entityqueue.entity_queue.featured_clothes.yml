@@ -1,0 +1,25 @@
+uuid: 935f807c-bd4c-4279-9e52-f3b10e2b58ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: featured_clothes
+label: 'Featured Clothes'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: commerce_product
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      clothes: clothes
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false
