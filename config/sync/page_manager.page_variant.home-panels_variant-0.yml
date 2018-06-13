@@ -5,8 +5,9 @@ dependencies:
   config:
     - page_manager.page.home
     - system.menu.footer
-    - system.menu.main
+    - views.view.category
     - views.view.featured_products
+    - views.view.sliderhome
   module:
     - panels
     - system
@@ -24,7 +25,7 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: content
-      weight: 0
+      weight: 1
       uuid: d688c9fd-8a71-4955-aa65-520311d35770
       context_mapping: {  }
     24fb6d49-3621-4a96-b15f-812c99c4c7f4:
@@ -35,19 +36,30 @@ variant_settings:
       level: 1
       depth: 0
       region: content
-      weight: 1
+      weight: 2
       uuid: 24fb6d49-3621-4a96-b15f-812c99c4c7f4
       context_mapping: {  }
-    08210d37-e6b6-4dc9-8b3d-8e32f33fb93e:
-      id: 'system_menu_block:main'
-      label: 'Main navigation'
-      provider: system
+    5181919b-4d7d-47a5-a6f5-6a5a5bec0c9c:
+      id: 'views_block:category-block_1'
+      label: ''
+      provider: views
       label_display: '0'
-      level: 1
-      depth: 0
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 5181919b-4d7d-47a5-a6f5-6a5a5bec0c9c
+      context_mapping: {  }
+    1e9556fc-871b-4b87-afcf-2d414a758887:
+      id: 'views_block:sliderhome-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
       region: content
       weight: -1
-      uuid: 08210d37-e6b6-4dc9-8b3d-8e32f33fb93e
+      uuid: 1e9556fc-871b-4b87-afcf-2d414a758887
       context_mapping: {  }
   id: panels_variant
   uuid: 1d67eaf8-4350-4b11-9f79-7a47d621ed71

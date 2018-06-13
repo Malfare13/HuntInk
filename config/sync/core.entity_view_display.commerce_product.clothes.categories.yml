@@ -1,9 +1,10 @@
-uuid: 9014a1d9-32ab-4250-8c0e-c61a175f3785
+uuid: 9c128d2a-4473-4239-8181-a720d228c36c
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.clothes
+    - core.entity_view_mode.commerce_product.categories
     - field.field.commerce_product.clothes.body
     - field.field.commerce_product.clothes.field_clothes_type
     - field.field.commerce_product.clothes.field_image
@@ -14,10 +15,10 @@ dependencies:
     - commerce_product
     - image
     - text
-id: commerce_product.clothes.default
+id: commerce_product.clothes.categories
 targetEntityType: commerce_product
 bundle: clothes
-mode: default
+mode: categories
 content:
   body:
     label: hidden

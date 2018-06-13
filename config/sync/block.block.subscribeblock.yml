@@ -1,0 +1,20 @@
+uuid: 9952bcf1-8b22-4164-b874-5e3054df3956
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+  theme:
+    - bartik
+id: subscribeblock
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: subscribe_block
+settings:
+  id: subscribe_block
+  label: 'Subscribe block'
+  provider: address
+  label_display: visible
+visibility: {  }

@@ -48,21 +48,22 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: none
+        type: some
         options:
-          items_per_page: 0
+          items_per_page: 4
           offset: 0
       style:
-        type: default
+        type: grid
         options:
-          grouping:
-            -
-              field: field_clothes_type
-              rendered: true
-              rendered_strip: false
-          row_class: ''
-          default_row_class: true
+          grouping: {  }
           uses_fields: true
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: 'entity:commerce_product'
       fields:

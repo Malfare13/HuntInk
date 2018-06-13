@@ -14,7 +14,6 @@ dependencies:
     - commerce
     - image
     - inline_entity_form
-    - path
     - text
 id: commerce_product.clothes.default
 targetEntityType: commerce_product
@@ -23,21 +22,15 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_clothes_type:
-    weight: 91
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
@@ -46,29 +39,16 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_image:
-    weight: 92
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 90
-    region: content
-    third_party_settings: {  }
   stores:
     type: commerce_entity_select
-    weight: -10
+    weight: 1
     settings:
       hide_single_entity: true
       autocomplete_threshold: 7
@@ -78,24 +58,15 @@ content:
     region: content
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
   variations:
     type: inline_entity_form_complex
-    weight: 10
+    weight: 3
     settings:
       override_labels: true
       label_singular: variation
@@ -106,4 +77,8 @@ content:
       match_operator: CONTAINS
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  status: true
+  uid: true

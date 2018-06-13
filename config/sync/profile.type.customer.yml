@@ -1,0 +1,15 @@
+uuid: 70a016c4-3642-4a50-b3d3-6c32717aa392
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_order
+id: customer
+label: Customer
+registration: false
+multiple: true
+roles: {  }
+weight: 0
+use_revisions: false
+description: null
