@@ -1,0 +1,14 @@
+uuid: cefab80a-73b3-4b9a-9ce4-d286fb1d062a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_order
+  module:
+    - entity
+id: commerce_order_delete_action
+label: 'Delete order'
+type: commerce_order
+plugin: 'entity_delete_action:commerce_order'
+configuration: {  }

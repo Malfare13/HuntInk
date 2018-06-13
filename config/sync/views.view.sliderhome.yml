@@ -1,17 +1,14 @@
-uuid: 017991c9-f77a-43a9-8347-2e1c38851427
+uuid: 7b501645-2d13-4012-b8d7-de71e6dd55a4
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.commerce_product.carousel
+    - core.entity_view_mode.commerce_product.slider
   module:
-    - commerce
     - commerce_product
-    - entityqueue
     - flexslider_views
-    - taxonomy
-id: featured_products
-label: 'Featured Products'
+id: sliderhome
+label: SliderHome
 module: views
 description: ''
 tag: ''
@@ -52,26 +49,23 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 10
+          items_per_page: 1
           offset: 0
       style:
         type: flexslider
-        options:
-          grouping: {  }
-          flexslider: null
-          optionset: featured_products_carousel
-          captionfield: ''
-          id: ''
       row:
         type: 'entity:commerce_product'
         options:
           relationship: none
-          view_mode: carousel
+          view_mode: slider
       fields:
-        type:
-          id: type
+        title:
           table: commerce_product_field_data
-          field: type
+          field: title
+          id: title
+          entity_type: null
+          entity_field: title
+          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
@@ -108,7 +102,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -116,11 +110,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
+          click_sort_column: value
+          type: string
+          settings: {  }
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -130,10 +123,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          hide_single_bundle: true
-          entity_type: commerce_product
-          entity_field: type
-          plugin_id: commerce_entity_bundle
       filters:
         status:
           value: '1'
@@ -147,31 +136,11 @@ display:
             operator: ''
           group: 1
       sorts: {  }
-      title: 'Featured Products'
+      title: SliderHome
       header: {  }
       footer: {  }
       empty: {  }
-      relationships:
-        field_clothes_type:
-          id: field_clothes_type
-          table: commerce_product__field_clothes_type
-          field: field_clothes_type
-          relationship: none
-          group_type: group
-          admin_label: 'field_clothes_type: Taxonomy term'
-          required: true
-          plugin_id: standard
-        entityqueue_relationship:
-          id: entityqueue_relationship
-          table: taxonomy_term_field_data
-          field: entityqueue_relationship
-          relationship: field_clothes_type
-          group_type: group
-          admin_label: 'Taxonomy term queue'
-          required: true
-          limit_queue: null
-          entity_type: taxonomy_term
-          plugin_id: entity_queue
+      relationships: {  }
       arguments: {  }
       display_extenders: {  }
     cache_metadata:

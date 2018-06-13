@@ -1,0 +1,22 @@
+uuid: 7432765c-7150-4c89-9109-af99fd0413df
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_paypal
+id: paypal
+label: PayPal
+weight: null
+plugin: paypal_express_checkout
+configuration:
+  api_username: huntinkapp_api1.gmail.com
+  api_password: ZCC77T6EERUXUHEB
+  shipping_prompt: shipping_skip
+  signature: AG7PT1RwIdbK5p4J3aN6O4.vdyopAKq00vqX2-ADIJKTFnIyDNOmw1mg
+  solution_type: Mark
+  display_label: PayPal
+  mode: live
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

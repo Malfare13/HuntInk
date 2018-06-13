@@ -24,6 +24,7 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  drupal_email: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
@@ -60,6 +61,7 @@ module:
   serialization: 0
   shortcut: 0
   state_machine: 0
+  subsescribe: 0
   system: 0
   taxonomy: 0
   text: 0

@@ -1,0 +1,37 @@
+uuid: 94b1a1d0-0424-42d4-8b87-d5c948d80c4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.clothes
+    - core.entity_view_mode.commerce_product.slider
+    - field.field.commerce_product.clothes.body
+    - field.field.commerce_product.clothes.field_clothes_type
+    - field.field.commerce_product.clothes.field_image
+    - field.field.commerce_product.clothes.stores
+    - field.field.commerce_product.clothes.variations
+    - image.style.medium
+  module:
+    - image
+id: commerce_product.clothes.slider
+targetEntityType: commerce_product
+bundle: clothes
+mode: slider
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  created: true
+  field_clothes_type: true
+  stores: true
+  title: true
+  uid: true
+  variations: true

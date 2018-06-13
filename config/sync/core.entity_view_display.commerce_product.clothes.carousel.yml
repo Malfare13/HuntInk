@@ -1,23 +1,24 @@
-uuid: 9014a1d9-32ab-4250-8c0e-c61a175f3785
+uuid: 226482bd-e1b3-4084-a1ea-19579bdc54f3
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.clothes
+    - core.entity_view_mode.commerce_product.carousel
     - field.field.commerce_product.clothes.body
     - field.field.commerce_product.clothes.field_clothes_type
     - field.field.commerce_product.clothes.field_image
     - field.field.commerce_product.clothes.stores
     - field.field.commerce_product.clothes.variations
-    - image.style.medium
+    - image.style.flexslider_thumbnail
   module:
     - commerce_product
     - image
     - text
-id: commerce_product.clothes.default
+id: commerce_product.clothes.carousel
 targetEntityType: commerce_product
 bundle: clothes
-mode: default
+mode: carousel
 content:
   body:
     label: hidden
@@ -38,8 +39,8 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: medium
-      image_link: ''
+      image_style: flexslider_thumbnail
+      image_link: content
     third_party_settings: {  }
     type: image
     region: content

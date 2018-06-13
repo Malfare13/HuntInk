@@ -1,0 +1,10 @@
+uuid: 22aaa3c5-88f3-43f9-ab62-85e2ce7b347b
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.carousel
+label: Carousel
+targetEntityType: commerce_product
+cache: true
